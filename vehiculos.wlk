@@ -7,8 +7,8 @@ object alambiqueVeloz {
 
 object antiguallaBlindada {
   var property cantidadGangsters = 4
-  method combustible() = 200 // Gran tanque[cite: 36]
-  method esRapido() = cantidadGangsters < 3 // Si hay muchos, es lento[cite: 36]
+  method combustible() = 200 // Gran tanque
+  method esRapido() = cantidadGangsters < 3 // Si hay muchos es lento
   method sufrirConsecuencias() { cantidadGangsters += 1 }
   method peso() = 2000
 }

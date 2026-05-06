@@ -14,12 +14,11 @@ object luke {
       // Incrementamos el contador de visitas
       cantidadLugaresVisitados = cantidadLugaresVisitados+1
       
-      //El vehículo sufre las consecuencias[cite: 29]
+      //El vehículo sufre las consecuencias
       vehiculoActual.sufrirConsecuencias()
     }
   }
 
-  // Métodos de consulta requeridos[cite: 29]
   method cantidadDeLugaresVisitados() = cantidadLugaresVisitados
   method ultimoRecuerdo() = recuerdoDestacado
   

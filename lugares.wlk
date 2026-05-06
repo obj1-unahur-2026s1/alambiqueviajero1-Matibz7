@@ -10,7 +10,8 @@ object buenosAires {
   var property presidenteActual = "Presidente X"
   
   method recuerdo() {
-    return if (presidenteActual == "Presidente A") "Mate con yerba" else "Mate sin yerba"
+    return if (presidenteActual == "Presidente A") "Mate con yerba"
+     else "Mate sin yerba"
   }
   method puedeEntrar(unVehiculo) = unVehiculo.esRapido()
 }
@@ -18,7 +19,7 @@ object buenosAires {
 object bagdad {
   var property recuerdoActual = "Bidón con petróleo"
   method recuerdo() = recuerdoActual
-  method puedeEntrar(unVehiculo) = true // Sin restricciones[cite: 36]
+  method puedeEntrar(unVehiculo) = true // Sin restricciones
 }
 
 object lasVegas {
@@ -28,8 +29,7 @@ object lasVegas {
   method puedeEntrar(unVehiculo) = lugarHomenajeado.puedeEntrar(unVehiculo)
 }
 
-// Nuevo destino: Tokio
 object tokio {
   method recuerdo() = "Figura de Godzilla"
-  method puedeEntrar(unVehiculo) = unVehiculo.peso() < 1500 // Restricción por peso[cite: 36]
+  method puedeEntrar(unVehiculo) = unVehiculo.peso() < 1500 // Restricción por peso
 }
